@@ -8,12 +8,12 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 - Web: [getFreeDomCrypto.org](https://getFreeDomCrypto.org)
 - Forum: [forum.getFreeDomCrypto.org](https://forum.getFreeDomCrypto.org)
 - Mail: [dev@getFreeDomCrypto.org](mailto:dev@getFreeDomCrypto.org)
-- GitHub: [https://github.com/FreeDomCrypto-project/FreeDomCrypto](https://github.com/FreeDomCrypto-project/FreeDomCrypto)
+- GitHub: [https://github.com/FDT-FreeDomToken/FreeDomCrypto](https://github.com/FDT-FreeDomToken/FreeDomCrypto)
 - IRC: [#FreeDomCrypto-dev on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%23FreeDomCrypto-dev&prompt=1&uio=d4)
 
 ## Vulnerability response
 
-- Our [Vulnerability Response Process](https://github.com/FreeDomCrypto-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md) encourages responsible disclosure
+- Our [Vulnerability Response Process](https://github.com/FDT-FreeDomToken/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md) encourages responsible disclosure
 - We are also available via [HackerOne](https://hackerone.com/FreeDomCrypto)
 
 ## Announcements
@@ -160,7 +160,7 @@ Debian / Ubuntu one liner for all dependencies
 
 Clone recursively to pull-in needed submodule(s):
 
-`$ git clone --recursive https://github.com/FreeDomCrypto-project/FreeDomCrypto`
+`$ git clone --recursive https://github.com/FDT-FreeDomToken/FreeDomCrypto`
 
 If you already have a repo cloned, initialize and update:
 
@@ -237,7 +237,7 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
 ```
 * Clone FreeDomCrypto and checkout most recent release version:
 ```
-        git clone https://github.com/FreeDomCrypto-project/FreeDomCrypto.git
+        git clone https://github.com/FDT-FreeDomToken/FreeDomCrypto.git
 	cd FreeDomCrypto
 	git checkout tags/v0.12.2.0
 ```
@@ -328,7 +328,7 @@ application.
 
 * To git clone, run:
 
-        git clone --recursive https://github.com/FreeDomCrypto-project/FreeDomCrypto.git
+        git clone --recursive https://github.com/FDT-FreeDomToken/FreeDomCrypto.git
 
 **Building**
 
@@ -336,7 +336,7 @@ application.
 	
         cd FreeDomCrypto
 
-* If you would like a specific [version/tag](https://github.com/FreeDomCrypto-project/FreeDomCrypto/tags), do a git checkout for that version. eg. 'v0.12.1.0'. If you dont care about the version and just want binaries from master, skip this step:
+* If you would like a specific [version/tag](https://github.com/FDT-FreeDomToken/FreeDomCrypto/tags), do a git checkout for that version. eg. 'v0.12.1.0'. If you dont care about the version and just want binaries from master, skip this step:
 	
         git checkout v0.12.1.0
 
