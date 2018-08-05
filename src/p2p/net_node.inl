@@ -405,7 +405,7 @@ namespace nodetool
     else
     {
       // full_addrs.insert("107.152.130.98:18080");
-      
+
     }
     return full_addrs;
   }
@@ -1234,7 +1234,7 @@ namespace nodetool
 
     if (start_conn_count == get_outgoing_connections_count() && start_conn_count < m_config.m_net_config.max_out_connection_count)
     {
-      MINFO("Failed to connect to any, trying seeds");
+      //MINFO("Failed to connect to any, trying seeds");
       if (!connect_to_seed())
         return false;
     }
