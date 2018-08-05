@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The FreeDomCrypto Project
 //
 // All rights reserved.
 //
@@ -33,7 +33,7 @@
 
 using namespace std;
 
-namespace Monero {
+namespace FreeDomCrypto {
 
 TransactionInfo::~TransactionInfo() {}
 
@@ -140,4 +140,4 @@ uint64_t TransactionInfoImpl::unlockTime() const
 
 } // namespace
 
-namespace Bitmonero = Monero;
+namespace BitFreeDomCrypto = FreeDomCrypto;

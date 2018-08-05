@@ -1,31 +1,31 @@
-name: monero
+name: FreeDomCrypto
 version: 0.11.1.0-1
-summary: "Monero: the secure, private, untraceable cryptocurrency https://getmonero.org"
+summary: "FreeDomCrypto: the secure, private, untraceable cryptocurrency https://getFreeDomCrypto.org"
 description: |
-    Monero is a private, secure, untraceable, decentralised digital currency.
+    FreeDomCrypto is a private, secure, untraceable, decentralised digital currency.
     You are your bank, you control your funds, and nobody can trace your transfers
     unless you allow them to do so.
 grade: devel
 confinement: strict
 
 apps:
-    monerod:
+    FreeDomCryptod:
         daemon: forking
         command: |
-          monerod-wrapper --detach --data-dir ${SNAP_COMMON} --config-file ${SNAP_USER_DATA}/etc/monerod.conf
+          FreeDomCryptod-wrapper --detach --data-dir ${SNAP_COMMON} --config-file ${SNAP_USER_DATA}/etc/FreeDomCryptod.conf
         plugs:
             - network
             - network-bind
-    monero-wallet-rpc:
+    FreeDomCrypto-wallet-rpc:
         command: |
-          monero-wallet-rpc --log-file ${SNAP_USER_DATA}
+          FreeDomCrypto-wallet-rpc --log-file ${SNAP_USER_DATA}
         plugs:
             - home
             - network
             - network-bind
-    monero-wallet-cli:
+    FreeDomCrypto-wallet-cli:
         command: |
-          monero-wallet-cli --log-file ${SNAP_USER_DATA}
+          FreeDomCrypto-wallet-cli --log-file ${SNAP_USER_DATA}
         plugs:
             - home
             - network
@@ -71,8 +71,8 @@ parts:
         plugin: dump
         source: .
         organize:
-            contrib/snap/monerod.conf: etc/monerod.conf
-            contrib/snap/monerod-wrapper: bin/monerod-wrapper
+            contrib/snap/FreeDomCryptod.conf: etc/FreeDomCryptod.conf
+            contrib/snap/FreeDomCryptod-wrapper: bin/FreeDomCryptod-wrapper
         prime:
             - etc
             - bin

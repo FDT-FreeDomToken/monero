@@ -1,8 +1,8 @@
 /// @file
-/// @author rfree (current maintainer in monero.cc project)
+/// @author rfree (current maintainer in FreeDomCrypto.cc project)
 /// @brief implementaion for throttling of connection (count and rate-limit speed etc)
 
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The FreeDomCrypto Project
 // 
 // All rights reserved.
 // 
@@ -76,8 +76,8 @@
 // TODO:
 #include "net/network_throttle-detail.hpp"
 
-#undef MONERO_DEFAULT_LOG_CATEGORY
-#define MONERO_DEFAULT_LOG_CATEGORY "net.throttle"
+#undef FreeDomCrypto_DEFAULT_LOG_CATEGORY
+#define FreeDomCrypto_DEFAULT_LOG_CATEGORY "net.throttle"
 
 // ################################################################################################
 // ################################################################################################

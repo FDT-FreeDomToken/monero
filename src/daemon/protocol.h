@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The FreeDomCrypto Project
 // 
 // All rights reserved.
 // 
@@ -30,8 +30,8 @@
 
 #pragma once
 
-#undef MONERO_DEFAULT_LOG_CATEGORY
-#define MONERO_DEFAULT_LOG_CATEGORY "daemon"
+#undef FreeDomCrypto_DEFAULT_LOG_CATEGORY
+#define FreeDomCrypto_DEFAULT_LOG_CATEGORY "daemon"
 
 namespace daemonize
 {

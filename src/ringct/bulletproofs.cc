@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2018, The Monero Project
+// Copyright (c) 2017-2018, The FreeDomCrypto Project
 // 
 // All rights reserved.
 // 
@@ -40,8 +40,8 @@ extern "C"
 #include "rctOps.h"
 #include "bulletproofs.h"
 
-#undef MONERO_DEFAULT_LOG_CATEGORY
-#define MONERO_DEFAULT_LOG_CATEGORY "bulletproofs"
+#undef FreeDomCrypto_DEFAULT_LOG_CATEGORY
+#define FreeDomCrypto_DEFAULT_LOG_CATEGORY "bulletproofs"
 
 //#define DEBUG_BP
 

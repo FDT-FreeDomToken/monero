@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The FreeDomCrypto Project
 //
 // All rights reserved.
 //
@@ -40,7 +40,7 @@
 #include <boost/thread/condition_variable.hpp>
 
 
-namespace Monero {
+namespace FreeDomCrypto {
 class TransactionHistoryImpl;
 class PendingTransactionImpl;
 class UnsignedTransactionImpl;
@@ -251,7 +251,7 @@ private:
 
 } // namespace
 
-namespace Bitmonero = Monero;
+namespace BitFreeDomCrypto = FreeDomCrypto;
 
 #endif
 

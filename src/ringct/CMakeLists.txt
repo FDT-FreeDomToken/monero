@@ -1,4 +1,4 @@
-# Copyright (c) 2016-2018, The Monero Project
+# Copyright (c) 2016-2018, The FreeDomCrypto Project
 #
 # All rights reserved.
 #
@@ -37,9 +37,9 @@ set(ringct_basic_private_headers
   rctTypes.h
   bulletproofs.h)
 
-monero_private_headers(ringct_basic
+FreeDomCrypto_private_headers(ringct_basic
   ${crypto_private_headers})
-monero_add_library(ringct_basic
+FreeDomCrypto_add_library(ringct_basic
   ${ringct_basic_sources}
   ${ringct_basic_private_headers})
 target_link_libraries(ringct_basic
@@ -60,9 +60,9 @@ set(ringct_private_headers
   rctSigs.h
 )
 
-monero_private_headers(ringct
+FreeDomCrypto_private_headers(ringct
   ${crypto_private_headers})
-monero_add_library(ringct
+FreeDomCrypto_add_library(ringct
   ${ringct_sources}
   ${ringct_headers}
   ${ringct_private_headers})

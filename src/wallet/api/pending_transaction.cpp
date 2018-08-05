@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2014-2018, The FreeDomCrypto Project
 //
 // All rights reserved.
 //
@@ -43,7 +43,7 @@
 
 using namespace std;
 
-namespace Monero {
+namespace FreeDomCrypto {
 
 PendingTransaction::~PendingTransaction() {}
 
@@ -243,5 +243,5 @@ std::vector<std::string> PendingTransactionImpl::signersKeys() const {
 
 }
 
-namespace Bitmonero = Monero;
+namespace BitFreeDomCrypto = FreeDomCrypto;
 
