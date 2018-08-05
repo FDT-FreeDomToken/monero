@@ -1,0 +1,13 @@
+# Target labels
+ generate_translations_header
+# Source files and their labels
+/root/monero/CMakeFiles/generate_translations_header
+/root/monero/CMakeFiles/generate_translations_header.rule
+/root/monero/CMakeFiles/generate_translations_header-complete.rule
+/root/monero/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-install.rule
+/root/monero/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-mkdir.rule
+/root/monero/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-download.rule
+/root/monero/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-update.rule
+/root/monero/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-patch.rule
+/root/monero/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-configure.rule
+/root/monero/generate_translations_header-prefix/src/generate_translations_header-stamp/generate_translations_header-build.rule
