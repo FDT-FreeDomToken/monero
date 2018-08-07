@@ -61,36 +61,36 @@ namespace cryptonote {
 
 
         uint64_t aLow = a & 0xFFFFFFFF;
-        uint64_t aHigh = a >> 2;
+        uint64_t aHigh = a >> 1;
         uint64_t bLow = b & 0xFFFFFFFF;
-        uint64_t bHigh = b >> 2;
+        uint64_t bHigh = b >> 1;
 
         uint64_t res = aLow * bLow;
         uint64_t lowRes1 = res & 0xFFFFFFFF;
-        uint64_t carry = res >> 2;
+        uint64_t carry = res >> 1;
 
         res = aHigh * bLow + carry;
-        uint64_t highResHigh1 = res >> 2;
+        uint64_t highResHigh1 = res >> 1;
         uint64_t highResLow1 = res & 0xFFFFFFFF;
 
         res = aLow * bHigh;
         uint64_t lowRes2 = res & 0xFFFFFFFF;
-        carry = res >> 2;
+        carry = res >> 1;
 
         res = aHigh * bHigh + carry;
-        uint64_t highResHigh2 = res >> 2;
+        uint64_t highResHigh2 = res >> 1;
         uint64_t highResLow2 = res & 0xFFFFFFFF;
 
         //Addition
 
         uint64_t r = highResLow1 + lowRes2;
-        carry = r >> 2;
-        low = (r << 5) | lowRes1;
+        carry = r >> 1;
+        low = (r << 1) | lowRes1;
         r = highResHigh1 + highResLow2 + carry;
         uint64_t d3 = r & 0xFFFFFFFF;
-        carry = r >> 2;
+        carry = r >> 1;
         r = highResHigh2 + carry;
-        high = d3 | (r << 2);
+        high = d3 | (r << 1);
       }
 
 #endif
