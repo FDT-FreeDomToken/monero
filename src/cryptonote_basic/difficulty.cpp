@@ -125,7 +125,8 @@ namespace cryptonote {
     if(timestamps.size() > DIFFICULTY_WINDOW)
     {
       timestamps.resize(DIFFICULTY_WINDOW);
-      cumulative_difficulties.resize(DIFFICULTY_WINDOW)-200;
+  //  cumulative_difficulties.resize(DIFFICULTY_WINDOW);
+  cumulative_difficulties.resize(0);
     }
 
 
