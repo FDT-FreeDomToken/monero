@@ -97,12 +97,12 @@ static const struct {
 
   // version 3 starts from block 1141317, which is on or around the 24th of September, 2016. Fork time finalised on 2016-03-21.
   { 3, 1141317, 0, 1458558528 },
-  
+
   // version 4 starts from block 1220516, which is on or around the 5th of January, 2017. Fork time finalised on 2016-09-18.
   { 4, 1220516, 0, 1483574400 },
-  
+
   // version 5 starts from block 1288616, which is on or around the 15th of April, 2017. Fork time finalised on 2017-03-14.
-  { 5, 1288616, 0, 1489520158 },  
+  { 5, 1288616, 0, 1489520158 },
 
   // version 6 starts from block 1400000, which is on or around the 16th of September, 2017. Fork time finalised on 2017-08-18.
   { 6, 1400000, 0, 1503046577 },
@@ -866,7 +866,10 @@ difficulty_type Blockchain::get_difficulty_for_next_block()
 
   CRITICAL_REGION_LOCAL1(m_difficulty_lock);
   m_difficulty_for_next_block_top_hash = top_hash;
-  m_difficulty_for_next_block = diff;
+ m_difficulty_for_next_block = diff;
+  if(diff >= 6000){
+    diff = diff-2604;
+  }
   return diff;
 }
 //------------------------------------------------------------------
