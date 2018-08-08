@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2018, The FreeDomCrypto Project
-// 
+//
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without modification, are
@@ -161,6 +161,12 @@ bool t_daemon::run(bool interactive)
     {
       LOG_ERROR(std::string("Failed to add TCP Socket (") + zmq_rpc_bind_address
           + ":" + zmq_rpc_bind_port + ") to ZMQ RPC Server");
+
+
+
+LOG_PRINT_L1("CURRENT DIFFICULTY");
+
+
 
       if (rpc_commands)
         rpc_commands->stop_handling();

@@ -77,15 +77,15 @@ t_command_server::t_command_server(
     , "Print the current connections."
   ); */
   m_command_lookup.set_handler(
-      "connection"
+      "connections"
     , std::bind(&t_command_parser_executor::print_connections, &m_parser, p::_1)
     , "Print the current connections."
     );
 
   m_command_lookup.set_handler(
-      "print_bc"
+      "view-bc"
     , std::bind(&t_command_parser_executor::print_blockchain_info, &m_parser, p::_1)
-    , "print_bc <begin_height> [<end_height>]"
+    , "view-bc <begin_height> [<end_height>]"
     , "Print the blockchain info in a given blocks range."
     );
   m_command_lookup.set_handler(
@@ -95,9 +95,9 @@ t_command_server::t_command_server(
     , "Print a given block."
     );
   m_command_lookup.set_handler(
-      "print_tx"
+      "transaction-lookup"
     , std::bind(&t_command_parser_executor::print_transaction, &m_parser, p::_1)
-    , "print_tx <transaction_hash> [+hex] [+json]"
+    , "transaction-lookup <transaction_hash> [+hex] [+json]"
     , "Print a given transaction."
     );
   m_command_lookup.set_handler(
