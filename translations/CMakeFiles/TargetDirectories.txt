@@ -1,3 +1,0 @@
-/root/monero/translations/CMakeFiles/edit_cache.dir
-/root/monero/translations/CMakeFiles/rebuild_cache.dir
-/root/monero/translations/CMakeFiles/generate_translations_header.dir
